@@ -1,0 +1,123 @@
+<div class="full-width">
+    <div class="full-width" style="min-height: 300px;background: #fff;border-bottom: 2px solid palevioletred;margin-top: 4.5%;">
+        <div style="float: left;width:70%;">
+            <div class="slantSection">
+            </div>
+        </div>
+    </div>
+    <div class="full-width text-center">
+        <h1>
+            <span class="bd-bottm">What's the problem ?</span>
+        </h1>
+        <br>
+        <div class="full-width">
+            <div class="mg-ato text-left">
+                <code>
+                    1. var loadData;
+                    <br>
+                    2. if(localStorage.getItem(“autocomplete”)==null)<br>
+                    {<br>
+                    3. $.get(“/backend”, function(data){<br>
+                    4. localStorage.setItem(“autocomplete”, data);<br>
+                    5. });<br>
+                    6. loadData = localStorage.getItem(“autocomplete”);<br>
+                    7. }else{<br>
+                    8. loadData = localStorage.getItem('autocomplete');<br>
+                    9. }<br>
+                    10. alert(loadData) // says <b>undefined</b>
+                </code>
+            </div>
+
+        </div>
+        <h4 class="mg-center">
+            While running this code this return the value "undefined" for the first time because as we can see that when<br>
+            localStorage is null it setItem in localStorage in line 4 but after API request since it is asynchronous in nature, Line 6 will <br>
+            execute first then it will set value in localStorage after request but till then <b>var loadData</b> is being set to <b>null.</b>
+            So when we alert <b>var loadData</b> it will return undefined but on refreshing the page it will not.
+        </h4>
+        <br>
+    </div>
+    <div id="wrapper" class="text-center">
+        <a href="javascript:void(0);" class="btn-starred">
+            checkout
+        </a>
+    </div>
+</div>
+
+<style>
+    .userThumbnail {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+    }
+
+    .tiltedElement {
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .tiltedElement:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(90, 74, 199, .8);
+        border-right: 40px solid rgba(173, 96, 223, .8);
+
+        -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+
+        -webkit-transform: skewX(30deg);
+        -ms-transform: skewX(30deg);
+        transform: skewX(30deg);
+    }
+
+    /******  FOR THE DEMO  *******/
+
+    .slanted{
+        min-height:300px;
+        position:relative;
+        overflow:hidden;
+    }
+    .slanted:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: lawngreen;
+        border-top: 92px solid #006cad;
+        /* border-bottom: 40px solid rgba(103, 76, 203, .8); */
+        -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        -webkit-transform: skewX(30deg);
+        -ms-transform: skewX(30deg);
+        transform: skewX(30deg);
+    }
+    .slanted:after {
+        content: '\2605';
+        position: absolute;
+        top: 92px;
+        right: -53px;
+        width: 100%;
+        height: 100%;
+        background-color: #af7eb2;
+        border-top: 95px solid lightseagreen;
+        /* border-bottom: 40px solid rgba(103, 76, 203, .8); */
+        -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        -webkit-transform: skewX(30deg);
+        -ms-transform: skewX(30deg);
+        transform: skewX(30deg);
+    }
+    .mg-center{
+        margin: 0 auto;max-width: 1000px;width: 100%;
+    }
+</style>

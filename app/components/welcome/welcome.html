@@ -1,0 +1,202 @@
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<!--<div id="wrapper">-->
+
+<!--</div>-->
+
+<div class="animateme">
+    <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+<div class="full-width bg-truck" scroll-spy="scroll-spy" id="first">
+    <div class="bg-primary">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2" style="margin-top: 10%;">
+                    <div class="main-head text-center">
+                        <h1>#LBB</h1>
+                        <h4>#Little #Black #Book</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid hidden-xs" id="second">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="full-width appstores ng-scope">
+            <div class="container" >
+                <div class="text-center">
+                    <h1><span class="not-head"><b>Get Notified !</b></span></h1>
+                    <br>
+                </div>
+                <div class="row specialRow" style="margin-top:6.2%;">
+                    <div class="col-sm-7 col-xs-12">
+                        <h1>Find The Best Local Experiences On The Go</h1>
+                        <h2>Download The App</h2>
+                        <br>
+                        <form ng-submit="model.sendSMS(form)" class="ng-pristine ng-valid">
+                            <input id="phone" ng-model="form.phone" name="phone" type="tel" class="mobile ng-pristine ng-untouched ng-valid ng-empty" placeholder="0987654321" onfocus="this.placeholder ='0987654321'" onblur="this.placeholder='0987654321'">
+                            <br>
+                            <p id="message" class="form-error"></p>
+                            <button type="submit" id="send-sms" class="btn-lg btn btn-success">Text Me the App Link</button>
+                        </form>
+                        <div class="applinks row">
+                            <div class="col-md-5 col-xs-6">
+                                <a onclick="ga('send','event','appCTA','downloadButton','AppleStore')" href="https://click.google-analytics.com/redirect?tid=UA-30225999-4&amp;url=https%3A%2F%2Fitunes.apple.com%2Fin%2Fapp%2Fid1041376594%3Fmt%3D8&amp;aid=1041376594&amp;idfa={idfa}&amp;cs=appCTA&amp;cm=downloadbutton&amp;cn=asjbsidb&amp;anid=cityselectionpage&amp;hash=md5" target="_blank"><img src="https://lbb.in/wp-content/themes/bone/library/images/DownloadAppAppStore@2x.png" class="img-responsive apple"></a>
+                            </div>
+                            <div class="col-md-7 col-xs-6">
+                                <a onclick="ga('send','event','appCTA','downloadButton','GooglePlay')" href="https://play.google.com/store/apps/details?id=littleblackbook.com.littleblackbook.lbbdapp.lbb&amp;referrer=utm_source%3DappCTA%26utm_medium%3Ddownloadbutton%26utm_campaign%3Dcityselectionpage" target="_blank"><img src="https://lbb.in/wp-content/themes/bone/library/images/DownloadAppGooglePlay@2x.png" class="img-responsive playstore"></a>
+                            </div>
+                        </div>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="col-sm-5 col-xs-12 app_mobile">
+                        <img src="https://lbb.in/wp-content/themes/bone/library/images/mobile_1.png" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="full-width" style="overflow: hidden;">
+    <div class="full-width rt-triangle"></div>
+    <div class="howitworks ng-scope">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="section-title">Customize Your Feed</h1>
+                </div>
+                <div class="three slider slick-initialized slick-slider">
+                    <div aria-live="polite" class="slick-list draggable" style="padding: 0px 1px;">
+                        <div class="slick-track" role="listbox">
+                            <div class="col-sm-4 slick-slide slick-current slick-center" data-slick-index="0" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide00">
+                                <h3>Select Your Interests <br>&nbsp;</h3>
+                                <img src="https://lbb.in/wp-content/themes/bone/library/images/howitworks_1.png" class="img-responsive">
+                            </div>
+                            <div class="col-sm-4 slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide01">
+                                <h3>Follow Local <br>Curators &amp; Friends</h3>
+                                <img src="https://lbb.in/wp-content/themes/bone/library/images/howitworks_2.png" class="img-responsive">
+                            </div>
+                            <div class="col-sm-4 slick-slide slick-center" data-slick-index="2" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide02">
+                                <h3>Save What You Want <br>To Do</h3>
+                                <img src="https://lbb.in/wp-content/themes/bone/library/images/howitworks_3.png" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="full-width" style="min-height: 400px;">
+    <div class="bodyBg">
+        <div class="tiltedElement">
+            <div class="col-sm-12 col-lg-4 col-md-4 col-xs-12">
+                <h1 class="title">Discover Your City with LBB</h1>
+                <h2>Local Recommendations for Everything You Need</h2>
+                <a href="javaScript:void(0);" ng-click="model.triggerLogin();" class="btn-lg btn btn-success citySelection getStarted">Get Started</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="full-width" style="border-top:6px solid #9b5bd4;">
+    <div class="press">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="section-title text-center">Fresh off the press</h1>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <a href="https://inc42.com/startups/delhi-startups/" target="_blank">
+                        <img src="https://lbb.in/wp-content/themes/bone/library/images/logo-investor1.png" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <a href="https://www.techinasia.com/black-book-painting-town-red" target="_blank">
+                        <img src="https://lbb.in/wp-content/themes/bone/library/images/logo-investor2.png" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <a href="http://tech.economictimes.indiatimes.com/news/startups/little-black-book-delhi-seed-funding/47513168" target="_blank">
+                        <img src="https://lbb.in/wp-content/themes/bone/library/images/logo-investor3.png" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <a href="http://www.forbes.com/30-under-30-asia-2016/media-marketing-advertising/#42dce29a4b2f" target="_blank">
+                        <img src="https://lbb.in/wp-content/themes/bone/library/images/logo-investor4.png" class="img-responsive">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="full-width testimonial-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+                <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+                        <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="active item">
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                            </blockquote>
+                            <div class="profile-circle" style="background: url(http://lorempixel.com/100/100/cats)"></div>
+                        </div>
+                        <div class="item">
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                            </blockquote>
+                            <div class="profile-circle" style="background: url(http://lorempixel.com/100/100/food);"></div>
+                        </div>
+                        <div class="item">
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                            </blockquote>
+                            <div class="profile-circle" style="background: url(http://lorempixel.com/100/100/people);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="full-width" style="overflow: hidden;">
+    <div class="triangle-topleft"></div>
+</div>
+<hr>
+<footer>
+    <div class="full-width">
+        <ul class="row footer-link pull-right list-inline">
+            <li><a href="https://lbb-contactus.paperform.co/" target="_blank">Contact Us</a></li>
+            <li><a href="https://lbb-partner.paperform.co/" target="_blank">Advertise on LBB</a></li>
+            <li><a href="https://lbb-jobs.paperform.co/" target="_blank">Careers</a></li>
+            <li><a href="https://lbb.in/policies/" target="_blank">Terms of Service</a></li>
+        </ul>
+    </div>
+</footer>
+
+
