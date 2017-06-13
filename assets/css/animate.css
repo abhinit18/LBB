@@ -1124,3 +1124,249 @@ stretchRight
 		-webkit-transform: scaleX(1);
 	}		
 }
+
+
+/*
+==============================================
+Faded
+==============================================
+*/
+
+
+.faded1{
+    animation-name: faded1;
+    -webkit-animation-name: faded1;
+
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+
+    visibility: visible !important;
+}
+
+@keyframes faded1 {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.2;
+    }
+    65%{
+        opacity: 0.4;
+    }
+    80%{
+        opacity: 0.6;
+    }
+    95%{
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes faded1 {
+    /*0% {*/
+    /*-webkit-transform: translateX(-150%);*/
+    /*}*/
+    /*50%{*/
+    /*-webkit-transform: translateX(8%);*/
+    /*}*/
+    /*65%{*/
+    /*-webkit-transform: translateX(-4%);*/
+    /*}*/
+    /*80%{*/
+    /*-webkit-transform: translateX(4%);*/
+    /*}*/
+    /*95%{*/
+    /*-webkit-transform: translateX(-2%);*/
+    /*}*/
+    /*100% {*/
+    /*-webkit-transform: translateX(0%);*/
+    /*}*/
+
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.2;
+    }
+    65%{
+        opacity: 0.4;
+    }
+    80%{
+        opacity: 0.6;
+    }
+    95%{
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*
+==============================================
+Faded
+==============================================
+*/
+
+
+.faded2{
+    animation-name: faded2;
+    -webkit-animation-name: faded2;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+
+    visibility: visible !important;
+}
+
+@keyframes faded2 {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.2;
+    }
+    65%{
+        opacity: 0.4;
+    }
+    80%{
+        opacity: 0.6;
+    }
+    95%{
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes faded2 {
+    /*0% {*/
+    /*-webkit-transform: translateX(-150%);*/
+    /*}*/
+    /*50%{*/
+    /*-webkit-transform: translateX(8%);*/
+    /*}*/
+    /*65%{*/
+    /*-webkit-transform: translateX(-4%);*/
+    /*}*/
+    /*80%{*/
+    /*-webkit-transform: translateX(4%);*/
+    /*}*/
+    /*95%{*/
+    /*-webkit-transform: translateX(-2%);*/
+    /*}*/
+    /*100% {*/
+    /*-webkit-transform: translateX(0%);*/
+    /*}*/
+
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.2;
+    }
+    65%{
+        opacity: 0.4;
+    }
+    80%{
+        opacity: 0.6;
+    }
+    95%{
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*
+==============================================
+Faded
+==============================================
+*/
+
+
+.faded3{
+    animation-name: faded3;
+    -webkit-animation-name: faded3;
+
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+
+    visibility: visible !important;
+}
+
+@keyframes faded3 {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.2;
+    }
+    65%{
+        opacity: 0.4;
+    }
+    80%{
+        opacity: 0.6;
+    }
+    95%{
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes faded3 {
+    /*0% {*/
+    /*-webkit-transform: translateX(-150%);*/
+    /*}*/
+    /*50%{*/
+    /*-webkit-transform: translateX(8%);*/
+    /*}*/
+    /*65%{*/
+    /*-webkit-transform: translateX(-4%);*/
+    /*}*/
+    /*80%{*/
+    /*-webkit-transform: translateX(4%);*/
+    /*}*/
+    /*95%{*/
+    /*-webkit-transform: translateX(-2%);*/
+    /*}*/
+    /*100% {*/
+    /*-webkit-transform: translateX(0%);*/
+    /*}*/
+
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.2;
+    }
+    65%{
+        opacity: 0.4;
+    }
+    80%{
+        opacity: 0.6;
+    }
+    95%{
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}

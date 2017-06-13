@@ -85,15 +85,15 @@
                 <div class="three slider slick-initialized slick-slider">
                     <div aria-live="polite" class="slick-list draggable" style="padding: 0px 1px;">
                         <div class="slick-track" role="listbox">
-                            <div class="col-sm-4 slick-slide slick-current slick-center" data-slick-index="0" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide00">
+                            <div class="col-sm-4 slick-slide slick-current slick-center dt1" data-slick-index="0" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide00">
                                 <h3>Select Your Interests <br>&nbsp;</h3>
                                 <img src="https://lbb.in/wp-content/themes/bone/library/images/howitworks_1.png" class="img-responsive">
                             </div>
-                            <div class="col-sm-4 slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide01">
+                            <div class="col-sm-4 slick-slide dt2" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide01">
                                 <h3>Follow Local <br>Curators &amp; Friends</h3>
                                 <img src="https://lbb.in/wp-content/themes/bone/library/images/howitworks_2.png" class="img-responsive">
                             </div>
-                            <div class="col-sm-4 slick-slide slick-center" data-slick-index="2" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide02">
+                            <div class="col-sm-4 slick-slide slick-center dt3" data-slick-index="2" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide02">
                                 <h3>Save What You Want <br>To Do</h3>
                                 <img src="https://lbb.in/wp-content/themes/bone/library/images/howitworks_3.png" class="img-responsive">
                             </div>
@@ -200,3 +200,31 @@
 </footer>
 
 
+<script>
+    $(window).scroll(function() {
+        $('.dt1').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+400) {
+                $(this).addClass("faded1");
+            }
+        });
+        $('.dt2').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+400) {
+                $(this).addClass("faded2");
+            }
+        });
+        $('.dt3').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+400) {
+                $(this).addClass("faded3");
+            }
+        });
+    });
+</script>
