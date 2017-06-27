@@ -29,11 +29,34 @@
             </div>
 
         </div>
-        <h4 class="mg-center">
-            While running this code this return the value "undefined" for the first time because as we can see that when<br>
-            localStorage is null it setItem in localStorage in line 4 but after API request since it is asynchronous in nature, Line 6 will <br>
-            execute first then it will set value in localStorage after request but till then <b>var loadData</b> is being set to <b>null.</b>
-            So when we alert <b>var loadData</b> it will return undefined but on refreshing the page it will not.
+        <h4 class="mg-center text-justify">
+            <br>
+            <br>
+            <ul class="full-width list-inline">
+                <li class="full-width">
+                    <b>1.</b> The output of this code will be <b>undefined</b> for the first time.<br>
+                    The reason for this is, localStorage will be <b>null</b> as it doesn't gets any value.
+                    <br>
+                    <br>
+                </li>
+                <li class="full-width">
+                    <b>2.</b> Due to asynchronous nature of http request, it takes time to get response but simultaneously
+                    localStorage is already being executed <b>null</b> and hence,
+                    <br>
+                    <br>
+                    <b>loadData = localStorage.getItem(“autocomplete”)</b>.
+                    <br>
+                    <br>
+                    which is <b>null.</b>
+                </li>
+                <li class="full-width">
+
+                </li>
+            </ul>
+            <br>
+            But after a while refreshing the page, localStorage sets the value after receiving response from http
+            request<br>
+            and therefore set the value of <b>loadData = localStorage</b>.<br>Such that we will not get the result of <b>undefined</b>.
         </h4>
         <br>
     </div>
